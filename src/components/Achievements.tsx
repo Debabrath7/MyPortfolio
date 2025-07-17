@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy } from 'lucide-react';
+import { Trophy, ExternalLink } from 'lucide-react';
 
 const Achievements: React.FC = () => {
   return (
@@ -22,6 +22,15 @@ const Achievements: React.FC = () => {
                 </p>
                 <div className="flex items-center text-gray-500">
                   <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Oct 2023</span>
+                  <a 
+                    href="/IJRAR24D1063.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="ml-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-700 transition-colors flex items-center"
+                  >
+                    <ExternalLink size={14} className="mr-1" />
+                    View Paper
+                  </a>
                 </div>
               </div>
             </div>
