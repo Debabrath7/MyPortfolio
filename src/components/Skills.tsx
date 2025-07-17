@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 interface SkillItemProps {
   name: string;
   logo: string;
-  percentage: number;
 }
 
 interface SkillCardProps {
@@ -14,7 +13,7 @@ interface SkillCardProps {
   skills: SkillItemProps[];
 }
 
-const SkillItem: React.FC<SkillItemProps> = ({ name, logo, percentage }) => {
+const SkillItem: React.FC<SkillItemProps> = ({ name, logo }) => {
   return (
     <motion.div 
       className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
@@ -25,19 +24,7 @@ const SkillItem: React.FC<SkillItemProps> = ({ name, logo, percentage }) => {
     >
       <img src={logo} alt={name} className="w-8 h-8 object-contain" loading="lazy" />
       <div className="flex-1">
-        <div className="flex justify-between items-center mb-1">
-          <span className="text-gray-700 dark:text-gray-300 font-medium">{name}</span>
-          <span className="text-sm text-purple-600 dark:text-purple-400 font-semibold">{percentage}%</span>
-        </div>
-        <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-          <motion.div 
-            className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full"
-            initial={{ width: 0 }}
-            whileInView={{ width: `${percentage}%` }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.2 }}
-          />
-        </div>
+        <span className="text-gray-700 dark:text-gray-300 font-medium">{name}</span>
       </div>
     </motion.div>
   );
@@ -75,36 +62,34 @@ const Skills: React.FC = () => {
       title: "Programming Languages",
       icon: <Code size={24} />,
       skills: [
-        { name: "Python", logo: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg", percentage: 90 },
-        { name: "Java", logo: "https://images.pexels.com/photos/160107/coffee-cup-and-saucer-black-coffee-160107.jpeg", percentage: 75 },
-        { name: "SQL", logo: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg", percentage: 85 }
+        { name: "Python", logo: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" },
+        { name: "Java", logo: "https://images.pexels.com/photos/160107/coffee-cup-and-saucer-black-coffee-160107.jpeg" },
+        { name: "SQL", logo: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" }
       ]
     },
     {
       title: "Databases",
       icon: <Database size={24} />,
       skills: [
-        { name: "MySQL", logo: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg", percentage: 80 },
-        { name: "MongoDB", logo: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg", percentage: 70 },
-        { name: "PostgreSQL", logo: "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg", percentage: 75 }
+        { name: "MySQL", logo: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" },
+        { name: "MongoDB", logo: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" }
       ]
     },
     {
       title: "Tools & Technologies",
       icon: <Wrench size={24} />,
       skills: [
-        { name: "Power BI", logo: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg", percentage: 85 },
-        { name: "Tableau", logo: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg", percentage: 80 },
-        { name: "Git", logo: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg", percentage: 90 }
+        { name: "Power BI", logo: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" },
+        { name: "Tableau", logo: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" }
       ]
     },
     {
       title: "Machine Learning",
       icon: <BrainCircuit size={24} />,
       skills: [
-        { name: "TensorFlow", logo: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg", percentage: 85 },
-        { name: "PyTorch", logo: "https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg", percentage: 80 },
-        { name: "Scikit-learn", logo: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg", percentage: 90 }
+        { name: "TensorFlow", logo: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" },
+        { name: "PyTorch", logo: "https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg" },
+        { name: "Scikit-learn", logo: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg" }
       ]
     }
   ];

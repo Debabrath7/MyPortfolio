@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               <Github size={20} />
             </a>
             <a 
-              href="/debabrath-cv.pdf" 
+              href="/Debabrath_CV.pdf" 
               download 
               className="bg-purple-600 text-white px-4 py-2 rounded-md flex items-center hover:bg-purple-700 transition-colors"
             >
