@@ -21,6 +21,7 @@ const SkillItem: React.FC<SkillItemProps> = ({ name, logo }) => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.3 }}
+      whileHover={{ x: 5 }}
     >
       <img src={logo} alt={name} className="w-8 h-8 object-contain" loading="lazy" />
       <div className="flex-1">
