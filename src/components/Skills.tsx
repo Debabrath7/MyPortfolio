@@ -64,7 +64,7 @@ const Skills: React.FC = () => {
       icon: <Code size={24} />,
       skills: [
         { name: "Python", logo: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" },
-        { name: "Java", logo: "https://images.pexels.com/photos/160107/coffee-cup-and-saucer-black-coffee-160107.jpeg" },
+        { name: "Java", logo: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" },
         { name: "SQL", logo: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" }
       ]
     },

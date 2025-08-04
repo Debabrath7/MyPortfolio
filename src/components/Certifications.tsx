@@ -88,35 +88,30 @@ const Certifications: React.FC = () => {
       issuer: "DeepLearning.AI",
       date: "Recent",
       logo: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
-      certificateUrl: "/Deep Learning.pdf"
     },
     {
       title: "Machine Learning with Python",
       issuer: "Foxmula",
       date: "Aug 2023",
       logo: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
-      certificateUrl: "/Foxmula.pdf"
     },
     {
       title: "Exploratory Data Analysis for Machine Learning",
       issuer: "IBM",
       date: "June 2023",
       logo: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg",
-      certificateUrl: "/Exploratory Data Analysis For Machine Learning (IBM).pdf"
     },
     {
       title: "Azure AI Fundamentals",
       issuer: "Microsoft",
       date: "July 2023",
       logo: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg",
-      certificateUrl: "/Azure AI Fundamentals.pdf"
     },
     {
       title: "Introduction to Generative AI",
       issuer: "Google",
       date: "June 2023",
       logo: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
-      certificateUrl: "/Gen AI.pdf"
     }
   ];
 
