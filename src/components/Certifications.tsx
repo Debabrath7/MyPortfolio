@@ -51,22 +51,15 @@ const CertificationCard: React.FC<{ certification: Certification; index: number 
           <span className="text-sm">{certification.date}</span>
         </div>
         
-        {certification.certificateUrl ? (
-          <motion.button
-            onClick={handleViewCertificate}
-            className="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors flex items-center"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <ExternalLink size={12} className="mr-1" />
-            View Certificate
-          </motion.button>
-        ) : (
-          <span className="bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 px-3 py-1 rounded-full text-xs font-medium flex items-center">
-            <Eye size={12} className="mr-1" />
-            Certificate
-          </span>
-        )}
+        <motion.button
+          onClick={handleViewCertificate}
+          className="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors flex items-center"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <ExternalLink size={12} className="mr-1" />
+          View Certificate
+        </motion.button>
       </div>
       
       {isHovered && (

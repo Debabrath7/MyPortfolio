@@ -50,7 +50,7 @@ const Achievements: React.FC = () => {
                       Published
                     </span>
                     <motion.a 
-                      href="https://drive.google.com/file/d/your-research-paper-id/view" 
+                      href="/IJRAR24D1063.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition-colors flex items-center"
