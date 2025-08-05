@@ -88,7 +88,7 @@ const Certifications: React.FC = () => {
       issuer: "Foxmula",
       date: "Aug 2023",
       logo: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
-      certificateUrl: "/New CV.pdf",
+      certificateUrl: "/Foxmula.pdf",
     },
     {
       title: "Exploratory Data Analysis for Machine Learning",
@@ -102,7 +102,7 @@ const Certifications: React.FC = () => {
       issuer: "Microsoft",
       date: "July 2023",
       logo: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg",
-      certificateUrl: "/New CV copy.pdf",
+      certificateUrl: "/Azure AI Fundamentals.pdf",
     },
     {
       title: "Introduction to Generative AI",
